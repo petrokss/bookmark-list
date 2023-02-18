@@ -1,0 +1,42 @@
+@import '../../styles/button.module.css';
+
+.form-input {
+  display: grid;
+  grid-row-gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.input {
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.input::placeholder {
+  font-family: andale mono, monospace;
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.input:focus::placeholder {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  transform: translateY(-20px);
+  font-size: 0.8rem;
+}
+
+.error-message {
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.add-bookmark {
+  width: 100%;
+}

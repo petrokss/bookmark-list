@@ -1,0 +1,23 @@
+.button {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover:not(:disabled),
+.button:focus:not(:disabled) {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  padding: 1rem;
+}
+
+.container {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+}
+
+.column {
+  flex-basis: 50%;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
